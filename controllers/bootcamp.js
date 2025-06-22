@@ -12,14 +12,14 @@ exports.getBootcamps = (req, res, next) => {
 exports.getBootcamp = (req, res, next) => {
   res
     .status(200)
-    .json({ sucess: true, msg: `Display bootcamp: ${req.params.id}` });
+    .json({ success: true, msg: `Display bootcamp: ${req.params.id}` });
 }
 
 // create new bootcamp
 // post /api/v1/bootcamps
 //access private
 exports.createBootcamp = (req, res, next) => {
-  res.status(200).json({ sucess: true, msg: "Create new bootcamp" });
+  res.status(200).json({ success: true, msg: "Create new bootcamp" });
 }
 
 // Update new bootcamp
@@ -28,7 +28,7 @@ exports.createBootcamp = (req, res, next) => {
 exports.updateBootcamp = (req, res, next) => {
   res
     .status(200)
-    .json({ sucess: true, msg: `Update bootcamp ${req.params.id}` });
+    .json({ success: true, msg: `Update bootcamp ${req.params.id}` });
 }
 
 // delete  bootcamp
